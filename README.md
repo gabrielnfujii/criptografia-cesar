@@ -1,44 +1,64 @@
-Criptografia com Cifra de César em C
-Este é um programa simples desenvolvido em C que permite ao usuário criptografar ou descriptografar mensagens de um arquivo de texto utilizando a Cifra de César. O usuário pode especificar o arquivo de entrada, escolher a operação (criptografar ou descriptografar) e fornecer uma chave numérica para a cifra.
+<div align="center">
 
-Funcionalidades
-Criptografia e Descriptografia: Criptografa ou descriptografa o conteúdo de um arquivo .txt.
+🔒 Cifra de César em C
+Um programa de linha de comando simples, desenvolvido em C, para criptografar e descriptografar mensagens de texto usando a clássica Cifra de César.
 
-Entrada de Arquivo: Permite que o usuário insira o caminho completo para o arquivo de texto a ser processado.
+</div>
 
-Chave Numérica: Solicita ao usuário uma chave de criptografia (um número inteiro) para realizar a cifra.
+📜 Sobre o Projeto
+Este projeto foi desenvolvido como uma ferramenta prática para demonstrar a implementação da Cifra de César. O programa permite ao utilizador fornecer o caminho para um ficheiro de texto, escolher entre criptografar ou descriptografar o seu conteúdo e definir uma chave numérica para o deslocamento dos caracteres. O resultado é guardado num novo ficheiro, preservando o original.
 
-Saída em Arquivo: Salva o resultado da operação em um novo arquivo, nomeado SaidaCRIPTO.txt para criptografia ou SaidaDESCRIPTO.txt para descriptografia.
+✨ Funcionalidades
+Criptografia e Descriptografia: Implementa a lógica da Cifra de César para codificar e descodificar texto.
 
-Interface Simples: Utiliza uma interface de linha de comando com cores para facilitar a interação do usuário.
+Manipulação de Ficheiros: Lê o conteúdo de um ficheiro .txt fornecido pelo utilizador e guarda o resultado num novo ficheiro (SaidaCRIPTO.txt ou SaidaDESCRIPTO.txt).
 
-Como Usar
+Interface Interativa: Guia o utilizador através de um menu simples e interativo no terminal.
+
+Validação de Entrada: Verifica se a chave fornecida é um número inteiro válido.
+
+Feedback Visual: Utiliza cores na interface para melhorar a experiência do utilizador e destacar mensagens de erro ou sucesso.
+
+🚀 Como Usar
 Pré-requisitos
-Para compilar e executar este projeto, você precisará de um compilador C, como o GCC (MinGW para Windows).
+Para compilar e executar o projeto, é necessário ter um compilador C instalado, como o GCC (MinGW no Windows).
 
-Compilação
-Abra o terminal na pasta do projeto e execute o seguinte comando para compilar o programa:
+1. Compilação
+Navegue até à pasta do projeto através do terminal e execute o seguinte comando para compilar o programa:
 
 Bash
 
-gcc TDE2ºParte.c -o TDE2ºParte.exe
-Execução
-Crie um arquivo de texto (por exemplo, mensagem.txt) com o conteúdo que você deseja criptografar ou descriptografar.
+gcc TDE2ºParte.c -o CifraDeCesar.exe
+2. Execução
+Crie um ficheiro de texto (ex: minha_mensagem.txt) com o texto que deseja processar.
 
 Execute o programa compilado:
 
 Bash
 
-./TDE2ºParte.exe
-Quando solicitado, insira o caminho completo para o seu arquivo de texto.
+./CifraDeCesar.exe
+Siga as instruções apresentadas no terminal:
 
-Escolha a operação desejada (1 para Criptografar ou 2 para Descriptografar).
+Insira o caminho completo para o seu ficheiro de texto.
 
-Insira a chave numérica.
+Escolha a operação (1 para Criptografar ou 2 para Descriptografar).
 
-O programa irá gerar um arquivo de saída com o resultado.
+Defina a chave numérica para a cifra.
 
-Estrutura do Projeto
-.
-├── TDE2ºParte.c      # Código-fonte principal do programa
-└── README.md         # Este arquivo
+Após a conclusão, o programa informará o nome do ficheiro de saída onde o resultado foi guardado.
+
+Exemplo de Interação
+===========================================================
+                Criptografia de César em C
+===========================================================
+
+Digite o caminho completo para o arquivo .txt: C:\caminho\para\minha_mensagem.txt
+
+Escolha a operação:
+1 - Criptografar
+2 - Descriptografar
+1
+
+Digite a chave de criptografia (um número inteiro): 3
+
+Operação concluída com sucesso. O resultado foi salvo em SaidaCRIPTO.txt
